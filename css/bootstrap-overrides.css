@@ -194,10 +194,6 @@ ul.layout-list {
     font-size: 12px;
 }
 
-.invalid {
-    background-color: #DD1111;
-}
-
 /* Remove all padding (and margins, apparently) */
 .no-padding {
     padding: 0 !important;
