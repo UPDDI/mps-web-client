@@ -735,3 +735,41 @@ h1, h2, h3, h4, h5 {
 table.ui-datepicker-calendar tbody td.highlight > a {
 	filter:none !important;
 }
+
+/*sample=matrix item, standard, blank, empty; replicate=1,2,3..; location=sample location; time=sample time;*/
+/*name=A1, A2, A3; use=standard, sample, blank, empty; */
+/*hiding and check box color DARKER*/
+.plate-matrix-item {background-color: yellow}
+.plate-location {background-color: #d5cca9}
+.plate-time {background-color: #b5fbb4}
+.plate-well-use {background-color: WhiteSmoke }
+.plate-label {background-image: linear-gradient(to bottom, #1e1e1e 0,#080800 100%);}
+.plate-compound {background-image: linear-gradient(to bottom,#5bc0de 0,#2aabd2 100%);}
+.plate-cell {background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);}
+.plate-setting {background-image: linear-gradient(to bottom, #f0ad4e 0, #eb9316 100%);}
+.plate-standard-value {background-color: #fbb4bc;}
+.plate-block-value {background-color: #d1cffa;}
+
+/*color of things in the table (lighter colors)*/
+.map-matrix-item {display: block; background-color: yellow; border-radius: 1px;
+    padding:3px; margin:0px; border: 1px solid white}
+.map-location {display: block; background-color: #d5cca9; border-radius: 1px;
+    padding:3px; margin:0px; border: 1px solid white}
+.map-time {display: block; background-color: #b5fbb4; border-radius: 1px;
+    padding:3px; margin:0px; border: 1px solid white}
+.map-well-use {display: block; background-color: WhiteSmoke ; border-radius: 1px;
+    padding:3px; margin:0px; border: 1px solid white}
+.map-label {color: white; display: block; background-color: #080808;
+    border-color: #080808; border-radius: 1px;
+    padding:3px; margin:0px; border: 1px solid white}
+.map-compound {display: block; background-color: #d9edf7;
+    border-color: #bce8f1;}
+.map-cell{display: block; background-color: #dff0d8;
+    border-color: #d6e9c6;}
+.map-setting{display: block; background-color: #fcf8e3;
+    border-color: #faebcc;}
+.map-standard-value {display: block; background-color: #fbb4bc; border-radius: 1px;
+    padding:3px; margin:0px; border: 1px solid white}
+.map-block-value {display: block; background-color: #d1cffa; border-radius: 1px;
+    padding:3px; margin:0px; border: 1px solid white}
+.check-mark-color {color: white}
