@@ -696,6 +696,10 @@ h1, h2, h3, h4, h5 {
 	background: #fffabb;
 }
 
+.required.single, .required.multi {
+	background: white;
+}
+
 .required > .selectize-input {
 	background: #fffabb;
 }
