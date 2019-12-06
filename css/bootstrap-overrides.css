@@ -736,6 +736,11 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 	filter:none !important;
 }
 
+/* Make Bootstrap Badges play nice with DataTables */
+.badge {
+    line-height: inherit;
+}
+
 /*sample=matrix item, standard, blank, empty; replicate=1,2,3..; location=sample location; time=sample time;*/
 /*name=A1, A2, A3; use=standard, sample, blank, empty; */
 /*hiding and check box color DARKER*/
