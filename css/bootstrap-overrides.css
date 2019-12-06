@@ -731,3 +731,8 @@ h1, h2, h3, h4, h5 {
 table.ui-datepicker-calendar tbody td.highlight > a {
 	filter:none !important;
 }
+
+/* Make Bootstrap Badges play nice with DataTables */
+.badge {
+    line-height: inherit;
+}
