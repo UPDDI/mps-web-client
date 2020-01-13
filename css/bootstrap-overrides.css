@@ -741,30 +741,45 @@ table.ui-datepicker-calendar tbody td.highlight > a {
     line-height: inherit;
 }
 
-/*sample=matrix item, standard, blank, empty; replicate=1,2,3..; location=sample location; time=sample time;*/
-/*name=A1, A2, A3; use=standard, sample, blank, empty; */
-/*hiding and check box color DARKER*/
+/*Assay Plate Map styles - check boxes*/
 .plate-matrix-item {background-color: yellow}
-.plate-location {background-color: #d5cca9}
-.plate-time {background-color: #b5fbb4}
-.plate-well-use {background-color: WhiteSmoke }
+.plate-location {background-color: #b99d74}
+.plate-dilution-factor {background-color: #87cbd5}
+.plate-time {background-color: #20a206
+}
+.plate-default-time {background-color: #6cee9e
+}
+.plate-well-use {background-color: #e4e4e4 }
 .plate-label {background-image: linear-gradient(to bottom, #1e1e1e 0,#080800 100%);}
 .plate-compound {background-image: linear-gradient(to bottom,#5bc0de 0,#2aabd2 100%);}
 .plate-cell {background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);}
 .plate-setting {background-image: linear-gradient(to bottom, #f0ad4e 0, #eb9316 100%);}
 .plate-standard-value {background-color: #fbb4bc;}
-.plate-block-value {background-color: #d1cffa;}
+.plate-block-raw-value {background-color: #d1cffa;}
+.plate-collection-volume {background-color: #FFEBB8;}
+.plate-collection-time {background-color: #ddffc5;}
 
-/*color of things in the table (lighter colors)*/
-.map-matrix-item {display: block; background-color: yellow; border-radius: 1px;
+/*Assay Plate Map styles - table*/
+.map-matrix-item {display: block; background-color: yellow;
+    border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-location {display: block; background-color: #d5cca9; border-radius: 1px;
+.map-location {display: block; background-color: #b99d74;
+    border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-time {display: block; background-color: #b5fbb4; border-radius: 1px;
+.map-dilution-factor {display: block; background-color: #87cbd5;
+    border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-well-use {display: block; background-color: WhiteSmoke ; border-radius: 1px;
+.map-time {display: block; background-color: #20a206;
+    border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-label {color: white; display: block; background-color: #080808;
+.map-default-time {display: block; background-color: #6cee9e;
+    border-radius: 1px;
+    padding:3px; margin:0px; border: 1px solid white}
+.map-well-use {display: block; background-color: #e4e4e4;
+    border-radius: 1px;
+    padding:3px; margin:0px; border: 1px solid white}
+.map-label {color: white;
+    display: block; background-color: #080808;
     border-color: #080808; border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
 .map-compound {display: block; background-color: #d9edf7;
@@ -773,8 +788,31 @@ table.ui-datepicker-calendar tbody td.highlight > a {
     border-color: #d6e9c6;}
 .map-setting{display: block; background-color: #fcf8e3;
     border-color: #faebcc;}
-.map-standard-value {display: block; background-color: #fbb4bc; border-radius: 1px;
+.map-standard-value {display: block; background-color: #fbb4bc;
+    border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-block-value {display: block; background-color: #d1cffa; border-radius: 1px;
+.map-block-raw-value {display: block; background-color: #d1cffa;
+    border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
+.map-collection-volume {display: block; background-color: #FFEBB8;
+    border-radius: 1px;
+    padding:3px; margin:0px; border: 1px solid white}
+.map-collection-time {display: block; background-color: #ddffc5;
+    border-radius: 1px;
+    padding:3px; margin:0px; border: 1px solid white}
+
+/*Assay Plate Map styles - misc*/
 .check-mark-color {color: white}
+.plate-map-page-field-labels-small {margin-top: 2px; text-align: right !important}
+.plate-map-page-field-labels-large {margin-top: 15px; text-align: right !important}
+.plate-map-page-field-labels-medium {margin-top: 8px; text-align: right !important}
+.plate-map-page-field-contents {margin-top: 8px; margin-bottom:2px}
+.plate-map-check-box {margin-top: 20px !important}
+.plate-map-bigger-radio { transform: scale(2); }
+.plate-map-page-radio-contents {margin-top: 6px; margin-left: 7px; margin-right: 7px; }
+.plate-map-radio-spacing  {margin-top: 5px; margin-left: 10px; margin-right: 25px}
+.plate-map-no-wrap {display: inline-block !important; white-space: nowrap !important;}
+.plate-file-block-well {background-color: Ivory; border: 1px solid LightGray  ; border-radius: 1px;}
+
+/*so starts hidden and must click button to see the checkbox options*/
+.toggle-display-none { display:none; }
