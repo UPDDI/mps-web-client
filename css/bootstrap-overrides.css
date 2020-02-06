@@ -745,7 +745,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .plate-matrix-item {background-color: yellow}
 .plate-location {background-color: #b99d74}
 .plate-dilution-factor {background-color: #87cbd5}
-.plate-time {background-color: #20a206
+.plate-time {background-color: #27fa06
 }
 .plate-default-time {background-color: #6cee9e
 }
@@ -769,7 +769,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .map-dilution-factor {display: block; background-color: #87cbd5;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-time {display: block; background-color: #20a206;
+.map-time {display: block; background-color: #27fa06;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
 .map-default-time {display: block; background-color: #6cee9e;
@@ -797,7 +797,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .map-collection-volume {display: block; background-color: #FFEBB8;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-collection-time {display: block; background-color: #ddffc5;
+.map-collection-time {display: block; background-color: #27fa06;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
 
@@ -812,7 +812,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .plate-map-page-radio-contents {margin-top: 6px; margin-left: 7px; margin-right: 7px; }
 .plate-map-radio-spacing  {margin-top: 5px; margin-left: 10px; margin-right: 25px}
 .plate-map-no-wrap {display: inline-block !important; white-space: nowrap !important;}
-.plate-file-block-well {background-color: Ivory; border: 1px solid LightGray  ; border-radius: 1px;}
+.plate-file-block-well {background-color: #e5e5e5; border: 1px solid LightGray; border-radius: 1px;}
 
 /*so starts hidden and must click button to see the checkbox options*/
 .toggle-display-none { display:none; }
