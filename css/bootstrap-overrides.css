@@ -741,6 +741,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
     line-height: inherit;
 }
 
+/* Start plate reader integration class section */
 /*Assay Plate Map styles - check boxes*/
 .plate-matrix-item {background-color: yellow}
 .plate-location {background-color: #b99d74}
@@ -758,7 +759,6 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .plate-block-raw-value {background-color: #d1cffa;}
 .plate-collection-volume {background-color: #FFEBB8;}
 .plate-collection-time {background-color: #ddffc5;}
-
 /*Assay Plate Map styles - table*/
 .map-matrix-item {display: block; background-color: yellow;
     border-radius: 1px;
@@ -800,25 +800,30 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .map-collection-time {display: block; background-color: #27fa06;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-
 /*Assay Plate Map styles - misc*/
 .check-mark-color {color: white}
-.plate-map-page-field-labels-small {margin-top: 2px; text-align: right !important}
-.plate-map-page-field-labels-large {margin-top: 15px; text-align: right !important}
-.plate-map-page-field-labels-medium {margin-top: 8px; text-align: right !important}
-.plate-map-page-field-contents-medium {margin-top: 8px; margin-bottom:2px}
-.plate-map-page-field-contents-large {margin-top: 15px; margin-bottom:2px}
+.plate-map-page-field-labels-small {margin-left: 2px; margin-right: 2px; margin-top: 2px; text-align: right !important}
+.plate-map-page-field-labels-large {margin-left: 2px; margin-right: 2px; margin-top: 15px; text-align: right !important}
+.plate-map-page-field-labels-medium {margin-left: 2px; margin-right: 2px; margin-top: 8px; text-align: right !important}
+.plate-map-page-field-contents-medium {margin-left: 2px; margin-right: 2px; margin-top: 8px; margin-bottom:2px}
+.plate-map-page-field-contents-large {margin-left: 2px; margin-right: 2px; margin-top: 15px; margin-bottom:2px}
 .plate-map-check-box {margin-top: 20px !important}
 .plate-map-bigger-radio { transform: scale(2); }
 .plate-map-page-radio-contents {margin-top: 6px; margin-left: 7px; margin-right: 7px; }
 .plate-map-radio-spacing  {margin-top: 5px; margin-left: 10px; margin-right: 25px}
 .plate-map-no-wrap {display: inline-block !important; white-space: nowrap !important;}
 .plate-file-block-well {background-color: #e5e5e5; border: 1px solid LightGray  ; border-radius: 1px;}
-
+.plate-file-button-spacer {margin-right: 5px; margin-left: 5px; padding-left:5pt; padding-right:5pt; }
+.plate-map-file-table {border: 3px solid black; width: 95%; margin: 10px; background-color: lightgrey}
+.plate-map-file-table-cell {border: 1px solid black; padding-left: 2px; padding-right: 2px;
+    text-align: center !important;}
+.plate-map-file-font-percent-small {font-size: 50%;}
+.plate-map-file-font-percent-medium {font-size: 75%;}
+.plate-map-file-font-percent-large {font-size: 90%;}
 .plate-file-must-click-button {
     background-image: linear-gradient(to bottom, #fffabb 0, #fff781 100%);
     border-color: #e9d66a;
 }
-
 /*so starts hidden and must click button to see the checkbox options*/
 .toggle-display-none { display:none; }
+/* end plate reader integration class section */
