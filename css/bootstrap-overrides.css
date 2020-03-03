@@ -824,6 +824,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
     background-image: linear-gradient(to bottom, #fffabb 0, #fff781 100%);
     border-color: #e9d66a;
 }
+.plate-map-special-well {font-size: 120%; padding-top: 4px; padding-bottom: 1px; border: 1px gray; background-color: lightgrey; text-align: center; vertical-align: center}
 /*so starts hidden and must click button to see the checkbox options*/
 .toggle-display-none { display:none; }
 /* end plate reader integration class section */
