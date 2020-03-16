@@ -356,13 +356,6 @@ ul.layout-list {
     color: #333;
 }
 
-/* Matrix */
-#matrix_table td {
-    border: 4px solid #333;
-    padding: 0px;
-    margin: 0px;
-}
-
 /* Rules for disabled anchors */
 a[disabled], a[disabled]:hover {
    pointer-events: none;
@@ -709,6 +702,17 @@ h1, h2, h3, h4, h5 {
 	cursor: pointer;
 }
 
+/* Matrix */
+#matrix_table td {
+    border: 4px solid #333;
+    padding: 0px;
+    margin: 0px;
+}
+
+#matrix_table th {
+    border: 0px;
+}
+
 /* Attempt to force scroll bars */
 /* Many browsers will not bother with these (firefox, IE, etc.) */
 #matrix_wrapper::-webkit-scrollbar {
@@ -729,6 +733,11 @@ h1, h2, h3, h4, h5 {
   right: -100px;
   width: 100px;
   height: 1px;
+}
+
+.matrix_item-td {
+	text-align: center;
+	vertical-align: middle;
 }
 
 /* Attempt to fix datepicker for IE */
