@@ -590,14 +590,14 @@ text.text-hover {
     line-height: 20px;
 }
 
-#handle-contrast, #handle-brightness {
+#dosing-slider-handle, #handle-contrast, #handle-brightness {
     width: 3em;
     height: 1.6em;
     top: 50%;
     margin-top: -.8em;
     text-align: center;
     line-height: 1.6em;
-}
+} 
 
 .hidden-checkboxes input[type=checkbox]{
     display: none;
