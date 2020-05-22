@@ -753,21 +753,19 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 /* Start plate reader integration class section */
 /*Assay Plate Map styles - check boxes*/
 .plate-matrix-item {background-color: yellow}
-.plate-location {background-color: #b99d74}
-.plate-dilution-factor {background-color: #87cbd5}
-.plate-time {background-color: #27fa06
-}
-.plate-default-time {background-color: #6cee9e
-}
-.plate-well-use {background-color: #e4e4e4 }
+.plate-location {background-color: #b99d74;}
+.plate-dilution-factor {background-color: #98c1f9; }
+.plate-time {background-color: #83a341; }
+.plate-default-time {background-color: #bdf8a3; }
+.plate-well-use {background-color: #e4e4e4; }
 .plate-label {background-image: linear-gradient(to bottom, #1e1e1e 0,#080800 100%);}
 .plate-compound {background-image: linear-gradient(to bottom,#5bc0de 0,#2aabd2 100%);}
 .plate-cell {background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);}
 .plate-setting {background-image: linear-gradient(to bottom, #f0ad4e 0, #eb9316 100%);}
 .plate-standard-value {background-color: #fbb4bc;}
 .plate-block-raw-value {background-color: #d1cffa;}
-.plate-collection-volume {background-color: #FFEBB8;}
-.plate-collection-time {background-color: #ddffc5;}
+.plate-collection-volume {background-color: #f9dcaa;}
+.plate-collection-time {background-color: #c7d3bb;}
 /*Assay Plate Map styles - table*/
 .map-matrix-item {display: block; background-color: yellow;
     border-radius: 1px;
@@ -775,13 +773,13 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .map-location {display: block; background-color: #b99d74;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-dilution-factor {display: block; background-color: #87cbd5;
+.map-dilution-factor {display: block; background-color: #98c1f9;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-time {display: block; background-color: #27fa06;
+.map-time {display: block; background-color: #83a341;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-default-time {display: block; background-color: #6cee9e;
+.map-default-time {display: block; background-color: #bdf8a3;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
 .map-well-use {display: block; background-color: #e4e4e4;
@@ -803,10 +801,10 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .map-block-raw-value {display: block; background-color: #d1cffa;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-collection-volume {display: block; background-color: #FFEBB8;
+.map-collection-volume {display: block; background-color: #f9dcaa;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
-.map-collection-time {display: block; background-color: #27fa06;
+.map-collection-time {display: block; background-color: #c7d3bb;
     border-radius: 1px;
     padding:3px; margin:0px; border: 1px solid white}
 /*Assay Plate Map styles - misc*/
@@ -814,8 +812,8 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .plate-map-page-field-labels-small {margin-left: 2px; margin-right: 2px; margin-top: 2px; text-align: right !important}
 .plate-map-page-field-labels-large {margin-left: 2px; margin-right: 2px; margin-top: 15px; text-align: right !important}
 .plate-map-page-field-labels-medium {margin-left: 2px; margin-right: 2px; margin-top: 8px; text-align: right !important}
-.plate-map-page-field-contents-medium {margin-left: 2px; margin-right: 2px; margin-top: 8px; margin-bottom:2px}
-.plate-map-page-field-contents-large {margin-left: 2px; margin-right: 2px; margin-top: 15px; margin-bottom:2px}
+.plate-map-page-field-contents-medium {margin-left: 2px; margin-right: 2px; margin-top: 8px; margin-bottom:2px; text-align: left !important}
+.plate-map-page-field-contents-large {margin-left: 2px; margin-right: 2px; margin-top: 15px; margin-bottom:2px; text-align: left !important}
 .plate-map-check-box {margin-top: 20px !important}
 .plate-map-bigger-radio { transform: scale(2); }
 .plate-map-page-radio-contents {margin-top: 6px; margin-left: 7px; margin-right: 7px; }
@@ -833,6 +831,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
     background-image: linear-gradient(to bottom, #fffabb 0, #fff781 100%);
     border-color: #e9d66a;
 }
+
 .plate-map-special-well {font-size: 120%; padding-top: 4px; padding-bottom: 1px; border: 1px gray; background-color: lightgrey; text-align: center; vertical-align: center}
 /*so starts hidden and must click button to see the checkbox options*/
 .toggle-display-none { display:none; }
