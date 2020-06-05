@@ -767,8 +767,13 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 }
 
 /* Start plate reader integration class section */
+.plate-map-well-use-empty {color: White; }
+.plate-map-well-use-sample {color: #486215; font-weight: bold;}
+.plate-map-well-use-standard {color: #791c49; font-weight: bold;}
+.plate-map-well-use-blank {color: #c1761d; font-weight: bold;}
 /*Assay Plate Map styles - check boxes*/
 .plate-matrix-item {background-color: yellow}
+
 .plate-location {background-color: #b99d74;}
 .plate-dilution-factor {background-color: #98c1f9; }
 .plate-time {background-color: #83a341; }
