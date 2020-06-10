@@ -678,6 +678,11 @@ table.dataTable th {
 	margin-bottom: 10px;
 }
 
+/* Allow centering of column contents */
+th.dt-center, td.dt-center {
+	text-align: center;
+}
+
 /* Remove input spin box for numbers */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
