@@ -730,8 +730,7 @@ h1, h2, h3, h4, h5 {
     margin: 0px;
 }
 
-/* Matrix: TODO add later */
-/*
+/* Matrix (Plates) */
 #matrix_table th {
     border: 0px;
 }
@@ -740,7 +739,6 @@ h1, h2, h3, h4, h5 {
 	text-align: center;
 	vertical-align: middle;
 }
-*/
 
 /* Attempt to force scroll bars */
 /* Many browsers will not bother with these (firefox, IE, etc.) */
