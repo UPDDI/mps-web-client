@@ -862,3 +862,130 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 /*so starts hidden and must click button to see the checkbox options*/
 .toggle-display-none { display:none; }
 /* end plate reader integration class section */
+
+/* start for help section (help might use a plate map or two) */
+.help-collapsible {
+    font-size: 115%;
+    /*color: lightgrey;*/
+    /*cursor: pointer;*/
+    width: 100%;
+    text-align: left;
+    border: 2px solid gray;
+    /*border-radius: 0%;*/
+    padding: 6px 6px 6px 6px;
+    margin: 4px 4px 4px 1px;
+}
+.help-collapsible:hover {
+    font-weight: bold;
+    font-size: 125%;
+    color: SandyBrown;
+    border: 2px solid gray;
+}
+.help-collapsible-half {
+    font-size: 105%;
+    /*color: lightgrey;*/
+    /*cursor: pointer;*/
+    width: 40%;
+    text-align: left;
+    border: 2px solid gray;
+    /*border-radius: 0%;*/
+    padding: 6px 6px 6px 6px;
+    margin: 4px 4px 4px 1px;
+}
+.help-collapsible-half:hover {
+    font-weight: bold;
+    font-size: 115%;
+    color: SandyBrown;
+    border: 2px solid gray;
+}
+
+/*https://stackoverflow.com/questions/17838607/making-an-iframe-responsive  */
+.myIframe {
+     position: relative;
+     padding-bottom: 65.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: auto;
+     -webkit-overflow-scrolling:touch;
+     border: solid black 1px;
+}
+.myIframe iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+.help-filled-circle {list-style-type: disc;}
+.help-open-circle {list-style-type: circle; padding-left: 20px;}
+.help-content-1, .help-content-2 {
+    display: none;
+    transition: max-height 0.1s ease-out;
+    border: 1px solid lightgray;
+    margin: 4px 4px 4px 1px;
+}
+.help-content-3 {
+    display: none;
+    transition: max-height 0.1s ease-out;
+}
+.table-components {background-color: snow; table-layout: fixed; word-wrap: break-word;}
+/*main titles*/
+.h1-level-0 {
+    font-style: italic;
+    font-size: 200%;
+    margin-top: 3%;
+    font-weight: 700;}
+/*just under the main buttons - under the blue buttons*/
+.h1-level-1 {font-style: normal;
+    font-size: 160%;
+    margin-top: 1%;
+    color: DarkSlateGray;}
+/*just under the interior buttons - under the green ones*/
+.h1-level-2 {font-style: normal;
+    font-size: 130%;
+    margin-top: 6px;
+    color: DarkOliveGreen;}
+/*need something for extra info under titles and under bars*/
+.h1-level-3 {
+    font-size: 115%;
+    color: DimGray;}
+.navi-special-1 {
+    font-size: 100%;
+    margin-top: 10px;
+    color: darkgrey;}
+.navi-special-2 {
+    font-size: 130%;
+    margin-top: 6px;
+    }
+
+.list-group-item {border: none;
+    margin-bottom: 2px;}
+.list-group {border: none;
+    margin-bottom: 2px;}
+
+/*https://www.aspforums.net/Threads/211834/How-to-search-text-on-web-page-similar-to-CTRL-F-using-jQuery/ */
+/*http://jsfiddle.net/wjLmx/23/ */
+
+.highlighted {
+ background-color:yellow;
+}
+.highlight {
+ background-color: #fff34d;
+ -moz-border-radius: 5px;
+ /* FF1+ */
+ -webkit-border-radius: 5px;
+ /* Saf3-4 */
+ border-radius: 5px;
+ /* Opera 10.5, IE 9, Saf5, Chrome */
+ -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+ /* FF3.5+ */
+ -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+ /* Saf3.0+, Chrome */
+ box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+ /* Opera 10.5+, IE 9.0 */
+}
+.highlight {
+ padding:1px 4px;
+ margin:0 -4px;
+}
+/* end help class section */
