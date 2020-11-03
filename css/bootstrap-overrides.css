@@ -958,34 +958,38 @@ table.ui-datepicker-calendar tbody td.highlight > a {
     margin-top: 6px;
     }
 
+/*glossary extract with stripped term, eg {{ glossary_dict.mpsdb_term }}*/
+.gse0 {
+    color: firebrick;
+    /*background-color: papayawhip;*/
+}
+/*glossary extract in loop - only depends on how loop queryset created in the views.py*/
+.gse1 {
+    color: firebrick;
+    /*background-color: papayawhip;*/
+}
+
 .list-group-item {border: none;
     margin-bottom: 2px;}
 .list-group {border: none;
     margin-bottom: 2px;}
 
-/*https://www.aspforums.net/Threads/211834/How-to-search-text-on-web-page-similar-to-CTRL-F-using-jQuery/ */
-/*http://jsfiddle.net/wjLmx/23/ */
+/*things that are tagged as <mark>*/
+mark{
+    background: gold;
+    color: #2d2d2d;
+}
+/*things that are tagged as <mark> with class current */
+mark.current {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  0%{opacity: .6;}
+  50%{opacity: 1;}
+  100%{opacity: .6;}
+}
+.content {
+  margin-top: 50px;
+}
 
-.highlighted {
- background-color:yellow;
-}
-.highlight {
- background-color: #fff34d;
- -moz-border-radius: 5px;
- /* FF1+ */
- -webkit-border-radius: 5px;
- /* Saf3-4 */
- border-radius: 5px;
- /* Opera 10.5, IE 9, Saf5, Chrome */
- -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
- /* FF3.5+ */
- -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
- /* Saf3.0+, Chrome */
- box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
- /* Opera 10.5+, IE 9.0 */
-}
-.highlight {
- padding:1px 4px;
- margin:0 -4px;
-}
 /* end help class section */
