@@ -1002,8 +1002,8 @@ mark.current {
     padding-bottom: 0px;
     padding-right: 7px;
 }
-.extra-bottom-padding {padding-bottom: 10px;}
-.extra-top-margin {margin-top: 10px;}
+.bottom-padding-xl {padding-bottom: 15px;}
+.top-padding-xl {padding-top: 15px;}
 
 .special-selected1 {
     font-weight: bold !important;
