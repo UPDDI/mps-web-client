@@ -277,7 +277,7 @@ ul.layout-list {
 }
 
 .no-wrap {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 /* Used to have padded rows */
@@ -316,12 +316,12 @@ ul.layout-list {
 
 /* Crude: no-wrap on dropdown toggles */
 .btn.dropdown-toggle {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 .btn-lg {
-	margin-top: 10px;
-	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .dropdown-menu, a .dropdown-toggle, .dropdown, .nav, .pagination, .carousel, .panel-title a {
@@ -675,12 +675,12 @@ table.dataTable th {
 
 /* Give datatables buttons a larger bottom margin */
 .dt-buttons {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 /* Allow centering of column contents */
 th.dt-center, td.dt-center {
-	text-align: center;
+    text-align: center;
 }
 
 /* Remove input spin box for numbers */
@@ -695,32 +695,32 @@ input[type="number"] {
 
 /* Crude */
 h1, h2, h3, h4, h5 {
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 /* Revise footer */
 #footer {
-	margin-top: 15px;
-	margin-bottom: 150px;
+    margin-top: 15px;
+    margin-bottom: 150px;
 }
 
 /* Highlight required fields */
 /* Sloppy */
 .required {
-	background: #fffabb;
+    background: #fffabb;
 }
 
 .required.single, .required.multi {
-	background: white;
+    background: white;
 }
 
 .required > .selectize-input {
-	background: #fffabb;
+    background: #fffabb;
 }
 
 /* Fix cursor for popup (subject to change) */
 .popup-link {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 /* Matrix */
@@ -757,13 +757,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .matrix_item-td {
-	text-align: center;
-	vertical-align: middle;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* Attempt to fix datepicker for IE */
 table.ui-datepicker-calendar tbody td.highlight > a {
-	filter:none !important;
+    filter:none !important;
 }
 
 /* Make Bootstrap Badges play nice with DataTables */
@@ -1018,6 +1018,11 @@ mark.current {
     background: #212121;
     border: 6px solid snow !important;
     padding: 2px !important;
+}
+
+/* Added to sck page help to control color*/
+.page-help-font {
+    color: #012b44 !important;
 }
 
 /* end omic upload file */
