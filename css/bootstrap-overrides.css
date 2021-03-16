@@ -9,7 +9,7 @@
 
 /* Too many navbar elements causes overflow of hamburger menu at certain sizes ~768px */
 .navbar-collapse {
-  max-height: initial !important;
+    max-height: initial !important;
 }
 
 #autocollapse.collapsed .navbar-toggle {
@@ -678,6 +678,28 @@ table.dataTable th {
     margin-bottom: 10px;
 }
 
+/* Revise datatable responsive sections */
+table.dataTable > tbody > tr.child ul.dtr-details {
+    width: 95%;
+}
+
+table.dataTable > tbody > tr.child span.dtr-title {
+    min-width: 150px;
+    max-width: 150px;
+    word-wrap: normal;
+    text-align: right;
+}
+
+table.dataTable > tbody > tr.child span.dtr-title:after {
+    content: "\0003A";
+    margin-right: 6px;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details > li {
+    border-width: 3px;
+    border-color: #777;
+}
+
 /* Allow centering of column contents */
 th.dt-center, td.dt-center {
     text-align: center;
@@ -748,12 +770,12 @@ h1, h2, h3, h4, h5 {
 }
 
 #matrix_container:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -100px;
-  width: 100px;
-  height: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -100px;
+    width: 100px;
+    height: 1px;
 }
 
 .matrix_item-td {
@@ -1025,4 +1047,22 @@ mark.current {
     color: #012b44 !important;
 }
 
+.left-pad {padding-left: 12px; padding-top: 3px;}
+.extra-bottom-padding {padding-bottom: 10px;}
+.extra-top-margin {margin-top: 10px;}
+
+.special-selected1 {
+    /*background: gold;*/
+    /*border: 1px solid #c0af4e !important;*/
+     border: 3px solid darkorange !important;
+}
+.special-selected2 {
+    /*background: steelblue;*/
+    /*border: 1px solid darkblue;*/
+     border: 3px solid mediumblue !important;
+}
+
+.btn-sm {
+    transform: scale(0.9);
+}
 /* end omic upload file */
