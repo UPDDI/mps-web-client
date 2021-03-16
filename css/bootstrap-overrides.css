@@ -9,7 +9,7 @@
 
 /* Too many navbar elements causes overflow of hamburger menu at certain sizes ~768px */
 .navbar-collapse {
-  max-height: initial !important;
+    max-height: initial !important;
 }
 
 #autocollapse.collapsed .navbar-toggle {
@@ -277,7 +277,7 @@ ul.layout-list {
 }
 
 .no-wrap {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 /* Used to have padded rows */
@@ -316,12 +316,12 @@ ul.layout-list {
 
 /* Crude: no-wrap on dropdown toggles */
 .btn.dropdown-toggle {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 .btn-lg {
-	margin-top: 10px;
-	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .dropdown-menu, a .dropdown-toggle, .dropdown, .nav, .pagination, .carousel, .panel-title a {
@@ -676,12 +676,35 @@ table.dataTable th {
 
 /* Give datatables buttons a larger bottom margin */
 .dt-buttons {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Revise datatable responsive sections */
+table.dataTable > tbody > tr.child ul.dtr-details {
+    width: 95%;
+}
+
+table.dataTable > tbody > tr.child span.dtr-title {
+    min-width: 150px;
+    max-width: 150px;
+    word-wrap: normal;
+    text-align: right;
+}
+
+table.dataTable > tbody > tr.child span.dtr-title:after {
+    content: "\0003A";
+    margin-right: 6px;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details > li {
+    border-width: 3px;
+    border-color: #777;
+
 }
 
 /* Allow centering of column contents */
 th.dt-center, td.dt-center {
-	text-align: center;
+    text-align: center;
 }
 
 /* Remove input spin box for numbers */
@@ -696,32 +719,32 @@ input[type="number"] {
 
 /* Crude */
 h1, h2, h3, h4, h5 {
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 /* Revise footer */
 #footer {
-	margin-top: 15px;
-	margin-bottom: 150px;
+    margin-top: 15px;
+    margin-bottom: 150px;
 }
 
 /* Highlight required fields */
 /* Sloppy */
 .required {
-	background: #fffabb;
+    background: #fffabb;
 }
 
 .required.single, .required.multi {
-	background: white;
+    background: white;
 }
 
 .required > .selectize-input {
-	background: #fffabb;
+    background: #fffabb;
 }
 
 /* Fix cursor for popup (subject to change) */
 .popup-link {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 #matrix_table td {
@@ -736,8 +759,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .matrix_item-td {
-	text-align: center;
-	vertical-align: middle;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* Attempt to force scroll bars */
@@ -754,17 +777,17 @@ h1, h2, h3, h4, h5 {
 }
 
 #matrix_container:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -100px;
-  width: 100px;
-  height: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -100px;
+    width: 100px;
+    height: 1px;
 }
 
 /* Attempt to fix datepicker for IE */
 table.ui-datepicker-calendar tbody td.highlight > a {
-	filter:none !important;
+    filter:none !important;
 }
 
 /* Make Bootstrap Badges play nice with DataTables */
