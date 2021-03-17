@@ -698,7 +698,7 @@ table.dataTable > tbody > tr.child span.dtr-title:after {
 
 table.dataTable > tbody > tr.child ul.dtr-details > li {
     border-width: 2px;
-    border-color: #3a3e41;
+    border-color: #ddd;
 }
 
 /* Allow centering of column contents */
