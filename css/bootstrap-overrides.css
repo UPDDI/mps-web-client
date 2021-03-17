@@ -684,11 +684,20 @@ table.dataTable > tbody > tr.child ul.dtr-details {
     width: 95%;
 }
 
+/* For large screens */
 table.dataTable > tbody > tr.child span.dtr-title {
-    min-width: 150px;
-    max-width: 150px;
+    min-width: 250px;
+    max-width: 250px;
     word-wrap: normal;
     text-align: right;
+}
+
+/* For small screens */
+@media (max-width: 992px) {
+    table.dataTable > tbody > tr.child span.dtr-title {
+        display: block;
+        text-align: left;
+   }
 }
 
 table.dataTable > tbody > tr.child span.dtr-title:after {
