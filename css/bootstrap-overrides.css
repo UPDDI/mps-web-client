@@ -9,7 +9,7 @@
 
 /* Too many navbar elements causes overflow of hamburger menu at certain sizes ~768px */
 .navbar-collapse {
-  max-height: initial !important;
+    max-height: initial !important;
 }
 
 #autocollapse.collapsed .navbar-toggle {
@@ -277,7 +277,7 @@ ul.layout-list {
 }
 
 .no-wrap {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 /* Used to have padded rows */
@@ -316,12 +316,12 @@ ul.layout-list {
 
 /* Crude: no-wrap on dropdown toggles */
 .btn.dropdown-toggle {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 .btn-lg {
-	margin-top: 10px;
-	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .dropdown-menu, a .dropdown-toggle, .dropdown, .nav, .pagination, .carousel, .panel-title a {
@@ -385,14 +385,12 @@ a[disabled], a[disabled]:hover {
 }
 
 /* Remove bottom border from bordered-table */
-/*
 .table-bordered {
     border: 0px solid #ddd;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-top: 1px solid #ddd;
 }
-*/
 
 /* Add border to chip table */
 .data-table th, .data-table td {
@@ -660,11 +658,12 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
     box-shadow: inset 1px 1px 3px #666;
     color: #fff;
 }
+* /
 
+/* Get rid of data table bottom border */
 .dataTables_wrapper.no-footer .dataTables_scrollBody {
     border-bottom: 0;
 }
-*/
 
 /* Attempt to resolve resizing issues with fixed header sort */
 table.dataTable td,
@@ -676,12 +675,43 @@ table.dataTable th {
 
 /* Give datatables buttons a larger bottom margin */
 .dt-buttons {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Revise datatable responsive sections */
+table.dataTable > tbody > tr.child ul.dtr-details {
+    width: 95%;
+}
+
+/* For large screens */
+table.dataTable > tbody > tr.child span.dtr-title {
+    min-width: 250px;
+    max-width: 250px;
+    word-wrap: normal;
+    text-align: right;
+}
+
+/* For small screens */
+@media (max-width: 992px) {
+    table.dataTable > tbody > tr.child span.dtr-title {
+        display: block;
+        text-align: left;
+   }
+}
+
+table.dataTable > tbody > tr.child span.dtr-title:after {
+    content: "\0003A";
+    margin-right: 6px;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details > li {
+    border-width: 2px;
+    border-color: #ddd;
 }
 
 /* Allow centering of column contents */
 th.dt-center, td.dt-center {
-	text-align: center;
+    text-align: center;
 }
 
 /* Remove input spin box for numbers */
@@ -696,48 +726,43 @@ input[type="number"] {
 
 /* Crude */
 h1, h2, h3, h4, h5 {
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 /* Revise footer */
 #footer {
-	margin-top: 15px;
-	margin-bottom: 150px;
+    margin-top: 15px;
+    margin-bottom: 150px;
 }
 
 /* Highlight required fields */
 /* Sloppy */
 .required {
-	background: #fffabb;
+    background: #fffabb;
 }
 
 .required.single, .required.multi {
-	background: white;
+    background: white;
 }
 
 .required > .selectize-input {
-	background: #fffabb;
+    background: #fffabb;
 }
 
 /* Fix cursor for popup (subject to change) */
 .popup-link {
-	cursor: pointer;
+    cursor: pointer;
 }
 
+/* Matrix */
 #matrix_table td {
     border: 4px solid #333;
     padding: 0px;
     margin: 0px;
 }
 
-/* Matrix (Plates) */
 #matrix_table th {
     border: 0px;
-}
-
-.matrix_item-td {
-	text-align: center;
-	vertical-align: middle;
 }
 
 /* Attempt to force scroll bars */
@@ -754,17 +779,22 @@ h1, h2, h3, h4, h5 {
 }
 
 #matrix_container:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -100px;
-  width: 100px;
-  height: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -100px;
+    width: 100px;
+    height: 1px;
+}
+
+.matrix_item-td {
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* Attempt to fix datepicker for IE */
 table.ui-datepicker-calendar tbody td.highlight > a {
-	filter:none !important;
+    filter:none !important;
 }
 
 /* Make Bootstrap Badges play nice with DataTables */
@@ -1003,6 +1033,29 @@ mark.current {
     padding-bottom: 0px;
     padding-right: 7px;
 }
+.bottom-padding-xl {padding-bottom: 15px;}
+.top-padding-xl {padding-top: 15px;}
+
+.special-selected1 {
+    font-weight: bold !important;
+    background: moccasin;
+    border: 1px solid darkgoldenrod !important;
+    /*border: 3px solid darkgoldenrod !important;*/
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+.no-edit1 {
+    color: snow;
+    background: #212121;
+    border: 6px solid snow !important;
+    padding: 2px !important;
+}
+
+/* Added to sck page help to control color*/
+.page-help-font {
+    color: #012b44 !important;
+}
+
 .left-pad {padding-left: 12px; padding-top: 3px;}
 .extra-bottom-padding {padding-bottom: 10px;}
 .extra-top-margin {margin-top: 10px;}
