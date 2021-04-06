@@ -20770,10 +20770,10 @@ var Clustergrammer =
 	  exp_button.attr('text-anchor', 'middle').attr('dominant-baseline', 'central').attr('font-family', 'FontAwesome').attr('font-size', '30px').text(function () {
 	    if (params.viz.is_expand === false) {
 	      // expand button
-	      return '\uf0b2';
+	      return '<';
 	    } else {
 	      // menu button
-	      return '\uf0c9';
+	      return '>';
 	    }
 	  }).attr('y', '25px').attr('x', '25px').style('cursor', 'pointer').style('opacity', expand_opacity).on('mouseover', function () {
 	    d3.select(this).style('opacity', 0.75);
@@ -20786,7 +20786,7 @@ var Clustergrammer =
 
 	      d3.select(this).text(function () {
 	        // menu button
-	        return '\uf0c9';
+	        return '>';
 	      });
 	      params.viz.is_expand = true;
 
@@ -20799,7 +20799,7 @@ var Clustergrammer =
 
 	      d3.select(this).text(function () {
 	        // expand button
-	        return '\uf0b2';
+	        return '<';
 	      });
 
 	      params.viz.is_expand = false;
