@@ -385,14 +385,12 @@ a[disabled], a[disabled]:hover {
 }
 
 /* Remove bottom border from bordered-table */
-/*
 .table-bordered {
     border: 0px solid #ddd;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-top: 1px solid #ddd;
 }
-*/
 
 /* Add border to chip table */
 .data-table th, .data-table td {
@@ -660,11 +658,12 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
     box-shadow: inset 1px 1px 3px #666;
     color: #fff;
 }
+* /
 
+/* Get rid of data table bottom border */
 .dataTables_wrapper.no-footer .dataTables_scrollBody {
     border-bottom: 0;
 }
-*/
 
 /* Attempt to resolve resizing issues with fixed header sort */
 table.dataTable td,
@@ -755,20 +754,15 @@ h1, h2, h3, h4, h5 {
     cursor: pointer;
 }
 
+/* Matrix */
 #matrix_table td {
     border: 4px solid #333;
     padding: 0px;
     margin: 0px;
 }
 
-/* Matrix (Plates) */
 #matrix_table th {
     border: 0px;
-}
-
-.matrix_item-td {
-    text-align: center;
-    vertical-align: middle;
 }
 
 /* Attempt to force scroll bars */
@@ -791,6 +785,11 @@ h1, h2, h3, h4, h5 {
     right: -100px;
     width: 100px;
     height: 1px;
+}
+
+.matrix_item-td {
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* Attempt to fix datepicker for IE */
@@ -1034,6 +1033,29 @@ mark.current {
     padding-bottom: 0px;
     padding-right: 7px;
 }
+.bottom-padding-xl {padding-bottom: 15px;}
+.top-padding-xl {padding-top: 15px;}
+
+.special-selected1 {
+    font-weight: bold !important;
+    background: moccasin;
+    border: 1px solid darkgoldenrod !important;
+    /*border: 3px solid darkgoldenrod !important;*/
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+.no-edit1 {
+    color: snow;
+    background: #212121;
+    border: 6px solid snow !important;
+    padding: 2px !important;
+}
+
+/* Added to sck page help to control color*/
+.page-help-font {
+    color: #012b44 !important;
+}
+
 .left-pad {padding-left: 12px; padding-top: 3px;}
 .extra-bottom-padding {padding-bottom: 10px;}
 .extra-top-margin {margin-top: 10px;}
