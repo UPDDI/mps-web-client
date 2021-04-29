@@ -10,7 +10,10 @@ var about_string = 'Zoom, scroll, and click buttons to interact with the cluster
 
 function make_clust(inst_network){
 
-    d3.json('json/', function(network_data){
+    let url = window.location.href;
+    let groups_param = url.substring(url.lastIndexOf('/') + 1);
+
+    d3.json('json/'+groups_param, function(network_data){
 
       // define arguments object
       var args = {
