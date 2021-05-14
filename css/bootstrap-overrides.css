@@ -1034,6 +1034,30 @@ mark.current {
     padding-bottom: 0px;
     padding-right: 7px;
 }
+
+.bottom-padding-xl {padding-bottom: 15px;}
+.top-padding-xl {padding-top: 15px;}
+
+.special-selected1 {
+    font-weight: bold !important;
+    background: moccasin;
+    border: 1px solid darkgoldenrod !important;
+    /*border: 3px solid darkgoldenrod !important;*/
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+.no-edit1 {
+    color: snow;
+    background: #212121;
+    border: 6px solid snow !important;
+    padding: 2px !important;
+}
+
+/* Added to sck page help to control color*/
+.page-help-font {
+    color: #012b44 !important;
+}
+
 .left-pad {padding-left: 12px; padding-top: 3px;}
 .extra-bottom-padding {padding-bottom: 10px;}
 .extra-top-margin {margin-top: 10px;}
