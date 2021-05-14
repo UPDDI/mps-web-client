@@ -1,3 +1,4 @@
+/*
 * {
   -webkit-box-sizing: border-box;
 }
@@ -10,7 +11,7 @@ body{
   background-color: #fff;
 }
 
-/*.clust_icon{
+.clust_icon{
   float:left;
   width: 33.3333333%;
   padding-left: 15px;
@@ -73,18 +74,19 @@ body{
   color: #337ab7;
 }
 
-.sidebar_text{
+.sidebar_text {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.1;
 }
 
-.sidebar_button_text{
+.sidebar_button_text {
   font-size: 13px;
   font-weight: 300;
 }
 
-.btn{
+/*
+.btn {
   padding-top:2px;
   padding-bottom:2px;
 }
@@ -141,10 +143,10 @@ body{
 .btn {
   font-family: inherit;
   display: inline-block;
-  /*padding: 6px 12px;*/
+  // padding: 6px 12px;
   margin-bottom: 0;
-  /*font-size: 14px;*/
-  /*font-weight: normal;*/
+  // font-size: 14px;
+  // font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
@@ -166,6 +168,8 @@ body{
   background-color: #337ab7;
   border-color: #2e6da4;
 }
+
+*/
 
 .toggle_row_order{
   position: relative;
@@ -219,7 +223,6 @@ body{
 div.awesomplete > ul {
   z-index: 99;
 }
-
 
 .form-control {
   font-family: inherit;
