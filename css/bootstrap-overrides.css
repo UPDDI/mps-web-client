@@ -367,9 +367,10 @@ a[disabled], a[disabled]:hover {
     background-color: #fcf8e3 !important;
 }
 
-/* For reproducibility (and perhaps other locations) */
-.big-checkbox {
+/* Large checkboxes for visibility */
+input[type="checkbox"].big-checkbox {
     transform: scale(2.5);
+    margin: 15px;
 }
 
 .strikethrough {
