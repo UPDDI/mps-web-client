@@ -770,6 +770,7 @@ h1, h2, h3, h4, h5 {
 .matrix_item-td {
     text-align: center;
     vertical-align: middle;
+    cursor: crosshair;
 }
 
 /* Attempt to force scroll bars */
