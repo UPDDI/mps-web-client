@@ -21984,9 +21984,9 @@ var Clustergrammer =
 
 	module.exports = function resize_col_text(params, svg_group) {
 	  svg_group.selectAll('.col_label_group').select('text').style('font-size', params.labels.default_fs_col + 'px').text(function (d) {
-	    // return utils.normal_name(d);
+	    return utils.normal_name(d);
 		// qkw - Lazy truncation prevention; determine criteria better rather than blowing it up
-		return d;
+		//return d;
 	  });
 
 	  svg_group.selectAll('.col_label_group').each(function () {
