@@ -88,6 +88,13 @@ function run_ini_enrichr(inst_cgm){
           // replace all instances of commas with new line
           var gene_list = group_string.replace(/, /g, '\n');
 
+          // qkw - truncate all probe IDs to separate out gene names
+          gene_list = gene_list.split("\n");
+          for (let i = 0; i < gene_list.length; i++) {
+              gene_list[i] = gene_list[i].split(" ")[0];
+          }
+          gene_list = gene_list.join("\n")
+
           ///////////////
           // clean list
           ///////////////

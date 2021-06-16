@@ -367,9 +367,10 @@ a[disabled], a[disabled]:hover {
     background-color: #fcf8e3 !important;
 }
 
-/* For reproducibility (and perhaps other locations) */
-.big-checkbox {
+/* Large checkboxes for visibility */
+input[type="checkbox"].big-checkbox {
     transform: scale(2.5);
+    margin: 15px;
 }
 
 .strikethrough {
@@ -769,6 +770,7 @@ h1, h2, h3, h4, h5 {
 .matrix_item-td {
     text-align: center;
     vertical-align: middle;
+    cursor: crosshair;
 }
 
 /* Attempt to force scroll bars */

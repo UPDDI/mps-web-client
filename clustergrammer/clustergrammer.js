@@ -18923,9 +18923,10 @@ var Clustergrammer =
 
 	  var inst_title = cat_data.type_name;
 	  // ensure that title is not too long
-	  if (inst_title.length >= max_string_length) {
-	    inst_title = inst_title.slice(0, max_string_length) + '..';
-	  }
+	  // qkw - found it; this is the truncation that affects columns.
+	  // if (inst_title.length >= max_string_length) {
+	  //   inst_title = inst_title.slice(0, max_string_length) + '..';
+	  // }
 
 	  // make title
 	  // cat_graph_group.append('text').classed('cat_graph_title', true).text(inst_title).style('font-family', '"Helvetica Neue", Helvetica, Arial, sans-serif').style('font-weight', 800);
@@ -18957,9 +18958,10 @@ var Clustergrammer =
 	      inst_text = inst_text.split(paragraph_string)[0];
 	    }
 	    // ensure that bar name is not too long
-	    if (inst_text.length >= max_string_length) {
-	      inst_text = inst_text.slice(0, max_string_length) + '..';
-	    }
+		// qkw - truncation?
+	    // if (inst_text.length >= max_string_length) {
+	    //   inst_text = inst_text.slice(0, max_string_length) + '..';
+	    // }
 	    return inst_text;
 	  }).attr('transform', function () {
 	    return 'translate(5, ' + 0.75 * bar_height + ')';
@@ -20353,6 +20355,7 @@ var Clustergrammer =
 	    return utils.normal_name(d);
 	  });
 
+	  // qkw - potential truncation location - check this normal_name function.
 	  d3.selectAll(params.root + ' .col_label_text').select('text').text(function (d) {
 	    return utils.normal_name(d);
 	  });
@@ -20363,9 +20366,10 @@ var Clustergrammer =
 	    trim_text(params, this, 'row');
 	  });
 
-	  d3.selectAll(params.root + ' .col_label_group').each(function () {
-	    trim_text(params, this, 'col');
-	  });
+	  // qkw - prevent column truncation
+	  // d3.selectAll(params.root + ' .col_label_group').each(function () {
+	  //   trim_text(params, this, 'col');
+	  // });
 		};
 
 /***/ }),
@@ -21246,7 +21250,9 @@ var Clustergrammer =
 	    var max_labels_to_trim = 150;
 	    // probably do not need
 	    /////////////////////////
-	    underscore.each(['row', 'col'], function (inst_rc) {
+	    // underscore.each(['row', 'col'], function (inst_rc) {
+		// qkw - they truncate these columns in like forty different places.
+		underscore.each(['row'], function (inst_rc) {
 
 	      var inst_num_visible = num_visible_labels(params, inst_rc);
 
@@ -21979,6 +21985,8 @@ var Clustergrammer =
 	module.exports = function resize_col_text(params, svg_group) {
 	  svg_group.selectAll('.col_label_group').select('text').style('font-size', params.labels.default_fs_col + 'px').text(function (d) {
 	    return utils.normal_name(d);
+		// qkw - Lazy truncation prevention; determine criteria better rather than blowing it up
+		//return d;
 	  });
 
 	  svg_group.selectAll('.col_label_group').each(function () {
@@ -22479,15 +22487,15 @@ var Clustergrammer =
 	          var inst_shift = inst_num * cat_room;
 	          return 'translate(0,' + inst_shift + ')';
 	        }).on('click', function (d) {
-
-	          if (d3.select(this).classed('cat_strings')) {
-
-	            var found_names = get_cat_names(params, d, this, 'col');
-
-	            $(params.root + ' .dendro_info').modal('toggle');
-	            var group_string = found_names.join(', ');
-	            d3.select(params.root + ' .dendro_info input').attr('value', group_string);
-	          }
+				//qkw - Click functionality serves no purpose here. The column clusters give the same info, minus built-in errors.
+	          // if (d3.select(this).classed('cat_strings')) {
+			  //
+	          //   var found_names = get_cat_names(params, d, this, 'col');
+			  //
+	          //   $(params.root + ' .dendro_info').modal('toggle');
+	          //   var group_string = found_names.join(', ');
+	          //   d3.select(params.root + ' .dendro_info input').attr('value', group_string);
+	          // }
 	        });
 	      } else {
 	        cat_rect = d3.select(inst_selection).select('.' + cat_rect_class);
@@ -22538,7 +22546,9 @@ var Clustergrammer =
 	  // var cat_string = cat_title + ': '+ cat_name;
 
 	  /* new string with click instructions */
-	  var cat_string = '<div>' + cat_title + ': ' + cat_name + '</div> <div> <br>Click for Category Menu </div>';
+	  // var cat_string = '<div>' + cat_title + ': ' + cat_name + '</div> <div> <br>Click for Category Menu </div>';
+	  // qkw - Remove clicking functionality from these - it gives nothing that the column cluster doesn't already give?
+	  var cat_string = '<div>' + cat_title + ': ' + cat_name + '</div>';
 
 	  d3.select(inst_selection).classed('hovering', true);
 
@@ -22976,6 +22986,13 @@ var Clustergrammer =
 	    d3.select(this).style('opacity', default_opacity);
 	  }).call(drag);
 
+	  // qkw - dendritic bubble labels for sliders
+	  if (inst_rc == "col") {
+		  d3.select(cgm.params.root + ' .' + inst_rc + '_slider_group').append("text").classed(inst_rc + '_bubble_label', true).attr("x", 0).attr("y", -15).attr("dy", ".35em").attr("transform", "rotate(90)").text(function(){return "0.5";});
+	  } else {
+		  d3.select(cgm.params.root + ' .' + inst_rc + '_slider_group').append("text").classed(inst_rc + '_bubble_label', true).attr("x", -10).attr("y", -10).attr("dy", ".35em").text(function(){return "0.5";});
+	  }
+
 	  function dragging() {
 
 	    cgm.params.is_slider_drag = true;
@@ -23000,6 +23017,13 @@ var Clustergrammer =
 	    var slider_value = 10 - slider_pos / 10;
 
 	    d3.select(this).attr("transform", "translate(0, " + slider_pos + ")");
+
+		// qkw - dendritic bubble label text
+		if ($(this).attr("class").includes("col")){
+			d3.select('.col_bubble_label').text(slider_value/10);
+		} else {
+			d3.select('.row_bubble_label').text(slider_value/10);
+		}
 
 	    change_groups(cgm, inst_rc, slider_value);
 	  }
@@ -28728,15 +28752,6 @@ var Clustergrammer =
 	  var min_link = underscore.min(network_data.links, function (d) {
 	    return d.value;
 	  }).value;
-
-      // QUINN - Going for half the total values weights things far too brutally; I'll opt for the average instead.
-      // qAvgValue = underscore.reduce(network_data.links, function(d) {
-      //     console.log(network_data.links)
-      //     if (d.value > 60000) {
-      //         console.log(d)
-      //     }
-      //     return d.value;
-      // }, 0) / (network_data.links.length === 0 ? 1 : network_data.links.length);
 
 	  var main_svg = d3.select(params.root + ' .sidebar_wrapper').append('svg').attr('height', svg_height + 'px').attr('width', svg_width + 'px');
 
